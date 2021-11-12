@@ -1,0 +1,27 @@
+{
+  "name": "deep-diff-pizza",
+  "version": "0.1.0",
+  "description": "Deep Diff Pizza is a utility that takes in 2 JSON Objects and returns the differences in an easy-to-use format.",
+  "keywords": [
+    "diff",
+    "difference",
+    "change",
+    "changes",
+    "changeset",
+    "jsdiff",
+    "jsondiff",
+    "deepjsondiff",
+    "compare",
+    "json",
+    "deep-diff-pizza"
+  ],
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "author": "Shadow Smith",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^27.3.1"
+  }
+}
