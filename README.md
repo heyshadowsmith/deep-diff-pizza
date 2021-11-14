@@ -1,3 +1,5 @@
+![Deep Diff Pizza](https://github.com/heyshadowsmith/deep-diff-pizza/blob/main/deep-diff-pizza.png "Deep Diff Pizza")
+
 # Deep Diff Pizza
 Deep Diff Pizza is a simple, 0 dependency utility function that takes in 2 JSON Objects and returns the differences in an easy-to-use format.
 

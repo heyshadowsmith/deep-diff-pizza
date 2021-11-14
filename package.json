@@ -15,6 +15,10 @@
     "json",
     "deep-diff-pizza"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/heyshadowsmith/deep-diff-pizza.git"
+  },
   "main": "./src/index.js",
   "scripts": {
     "test": "jest --coverage"
