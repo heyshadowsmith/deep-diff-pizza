@@ -5,7 +5,7 @@ Deep Diff Pizza is a simple, 0 dependency utility function that takes in 2 JSON 
 
 ## Install
 ```
-npm i deep-dish-pizza
+npm i deep-diff-pizza
 ```
 
 ## Usage
