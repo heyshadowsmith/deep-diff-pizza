@@ -1,6 +1,6 @@
 {
   "name": "deep-diff-pizza",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Deep Diff Pizza is a simple, 0 dependency utility function that takes in 2 JSON Objects and returns the differences in an easy-to-use format.",
   "keywords": [
     "diff",
