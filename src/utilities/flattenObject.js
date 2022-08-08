@@ -4,9 +4,12 @@ module.exports = function flattenObject (obj) {
 
   // Loop through every key in the Object.
   for (const key in obj) {
+    const isObject = typeof obj[key] === 'object'
+    const isArray = Array.isArray(obj[key])
+    const isNull = obj[key] === null
 
     // If the key's value is an Object and not an Array...
-    if (typeof obj[key] === 'object' && !Array.isArray(obj[key])) {
+    if (isObject && !isArray && !isNull) {
 
       // Flatten the Object...
       const flattenedObject = flattenObject(obj[key])
@@ -23,13 +26,13 @@ module.exports = function flattenObject (obj) {
     }
 
     // If the key's value is an Array...
-    if (Array.isArray(obj[key])) {
+    if (isArray && obj[key]?.length > 0) {
 
       // Loop through each item in the Array...
       obj[key].forEach((item, index) => {
 
         // If the key's value is an Object and not an Array...
-        if (typeof item === 'object' && !Array.isArray(item)) {
+        if (typeof item === 'object' && !Array.isArray(item) && item !== null) {
 
           // Flatten the Object...
           const flattenedObject = flattenObject(item)
